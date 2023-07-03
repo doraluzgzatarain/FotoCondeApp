@@ -1,0 +1,18 @@
+package com.fotocondeproducciones.portalwebapp.service;
+
+import com.fotocondeproducciones.portalwebapp.model.User;
+import com.fotocondeproducciones.portalwebapp.repository.UserRepository;
+
+public class UserService {
+
+	public User createUser(User user) {
+		if(UserRepository.findByEmail(user.getEmail()).isEmpty()) {
+			tmpProd = productoRepository.save(producto);
+		} else {
+			System.out.println("Ya existe un producto con el nombre [" + producto.getDescripcion() + "]");
+		} //if
+		return tmpProd;
+		return null;
+	}
+
+} //UserService

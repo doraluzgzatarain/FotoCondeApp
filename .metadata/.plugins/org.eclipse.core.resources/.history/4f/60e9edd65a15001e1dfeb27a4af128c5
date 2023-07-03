@@ -1,0 +1,26 @@
+package com.fotocondeproducciones.portalwebapp.service;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.fotocondeproducciones.portalwebapp.model.User;
+import com.fotocondeproducciones.portalwebapp.repository.UserRepository;
+
+
+public class UserService {
+
+	@Autowired
+	private UserRepository userRepository;
+	
+	public String createUser(User user) {
+		Optional<User> optionalUser = userRepository.findByEmail(user.getEmail());
+		if(optionalUser.isEmpty()) {
+			userRepository.save(user);
+			return "Usuario creado ";
+		}else{
+			return "Email ya registrado";
+		}
+	}
+
+} //UserService

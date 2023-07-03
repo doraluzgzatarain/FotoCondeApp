@@ -1,0 +1,5 @@
+package com.fotocondeproducciones.portalwebapp.service;
+
+public class UserService {
+
+} //UserService

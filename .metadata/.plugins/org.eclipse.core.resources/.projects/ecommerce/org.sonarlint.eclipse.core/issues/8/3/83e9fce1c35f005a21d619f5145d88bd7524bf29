@@ -1,0 +1,11 @@
+
+t
+java:S3655<"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(¡Ú‡ÏH=RMAJORZBUG
+t
+java:S3655("PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(Ô°°ÚH<RMAJORZBUG
+f	java:S125P"<This block of commented-out lines of code should be removed.(«‹¿H;RMAJORZ
+CODE_SMELL
+h	java:S106D"9Replace this use of System.out or System.err by a logger.(é—‰“øÿÿÿÿH:RMAJORZ
+CODE_SMELL
+k	java:S125="<This block of commented-out lines of code should be removed.(‡’˜üþÿÿÿÿH>RMAJORZ
+CODE_SMELL
