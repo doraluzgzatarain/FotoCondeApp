@@ -1,0 +1,12 @@
+
+#DB CONFIGURATION FOR LOCAL DEVELOPMENT#
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/fotocondedb
+    username: root
+    password: Heyjude14*
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
